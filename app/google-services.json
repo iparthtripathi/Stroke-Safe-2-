@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "506169857858",
+    "firebase_url": "https://stroke-safe-default-rtdb.firebaseio.com",
+    "project_id": "stroke-safe",
+    "storage_bucket": "stroke-safe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506169857858:android:ec3a2b33d0eea27e8adadb",
+        "android_client_info": {
+          "package_name": "com.parth.strokesafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506169857858-v077ngt49akrfga3kn5on90vbfi96op7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf-cIf0PJyIiLbI8VQV_TuXWrhPzbGs-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506169857858-v077ngt49akrfga3kn5on90vbfi96op7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
