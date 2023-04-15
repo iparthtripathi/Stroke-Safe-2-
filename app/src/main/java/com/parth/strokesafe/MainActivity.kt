@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding.predict.setOnClickListener{
             val intent=Intent(this,signUpActivity1::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

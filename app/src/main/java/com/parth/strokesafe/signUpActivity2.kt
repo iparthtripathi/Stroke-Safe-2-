@@ -3,6 +3,7 @@ package com.parth.strokesafe
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.parth.strokesafe.databinding.ActivitySignUp2Binding
 
@@ -13,6 +14,11 @@ class signUpActivity2 : AppCompatActivity() {
         binding=ActivitySignUp2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val items= listOf("Yes","No")
+        val adapter= ArrayAdapter(this,R.layout.list_items,items)
+        binding.alcohol1.setAdapter(adapter)
+        binding.cardio1.setAdapter(adapter)
+        binding.smoke1.setAdapter(adapter)
         binding.createAccount.setOnClickListener{
 
             if(binding.smoke1.text.isNotEmpty()&& binding.alcohol1.text.isNotEmpty()&& binding.cardio1.text.isNotEmpty()){
