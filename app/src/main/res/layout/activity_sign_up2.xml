@@ -173,7 +173,7 @@
                     android:hint="Have any cardiovascular disease?"
                     android:textColorHint="@android:color/darker_gray"
                     android:visibility="visible"
-
+                    android:paddingStart="40dp"
                     app:boxBackgroundColor="#F5F8FA"
                     app:layout_constraintEnd_toEndOf="@+id/select_time"
                     app:layout_constraintStart_toStartOf="@+id/select_time"
