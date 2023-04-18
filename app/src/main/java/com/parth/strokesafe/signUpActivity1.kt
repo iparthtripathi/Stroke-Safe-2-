@@ -15,9 +15,13 @@ class signUpActivity1 : AppCompatActivity() {
         binding=ActivitySignUp1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val items= listOf("Male","Female","Prefer not to say")
+        val items= listOf("Male","Female")
+        val items1= listOf("normal","below normal","well above normal")
+        val adapter1=ArrayAdapter(this,R.layout.list_items,items1)
         val adapter=ArrayAdapter(this,R.layout.list_items,items)
         binding.gender1.setAdapter(adapter)
+        binding.gluc1.setAdapter(adapter1)
+        binding.cholestrol1.setAdapter(adapter1)
 
         binding.createAccount.setOnClickListener{
             if(binding.age.text.isNotEmpty()&& binding.gender1.text.isNotEmpty()&& binding.height.text.isNotEmpty()&& binding.weight.text.isNotEmpty()){

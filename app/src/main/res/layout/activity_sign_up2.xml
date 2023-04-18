@@ -163,6 +163,34 @@
                         android:textColor="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/active"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editfield"
+                    android:hint="Are you Active?"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:visibility="visible"
+                    android:paddingStart="40dp"
+                    app:boxBackgroundColor="#F5F8FA"
+                    app:layout_constraintEnd_toEndOf="@+id/select_time"
+                    app:layout_constraintStart_toStartOf="@+id/select_time"
+                    app:layout_constraintTop_toBottomOf="@+id/select_time">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/active1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:inputType="none"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/cardio"
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"

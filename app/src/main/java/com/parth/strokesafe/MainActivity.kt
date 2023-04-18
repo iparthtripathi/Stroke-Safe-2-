@@ -23,19 +23,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
 
-            val inputData = floatArrayOf(1.0f, 2.0f, 3.0f) // replace with your actual input data
-            val byteBuffer = ByteBuffer.allocateDirect(inputData.size * 4)
-            byteBuffer.asFloatBuffer().put(inputData)
-
-            val model = LiteModel.newInstance(this)
-
-            val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, inputData.size), DataType.FLOAT32)
-            inputFeature0.loadBuffer(byteBuffer)
-
-            val outputs = model.process(inputFeature0)
-            val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-
-            model.close()
+//            val inputData = floatArrayOf(1.0f, 2.0f, 3.0f) // replace with your actual input data
+//            val byteBuffer = ByteBuffer.allocateDirect(inputData.size * 4)
+//            byteBuffer.asFloatBuffer().put(inputData)
+//
+//            val model = LiteModel.newInstance(this)
+//
+//            val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, inputData.size), DataType.FLOAT32)
+//            inputFeature0.loadBuffer(byteBuffer)
+//
+//            val outputs = model.process(inputFeature0)
+//            val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+//
+//            model.close()
         }
     }
 }

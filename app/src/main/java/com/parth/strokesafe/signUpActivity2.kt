@@ -19,14 +19,15 @@ class signUpActivity2 : AppCompatActivity() {
         binding.alcohol1.setAdapter(adapter)
         binding.cardio1.setAdapter(adapter)
         binding.smoke1.setAdapter(adapter)
+        binding.active1.setAdapter(adapter)
         binding.createAccount.setOnClickListener{
 
             if(binding.smoke1.text.isNotEmpty()&& binding.alcohol1.text.isNotEmpty()&& binding.cardio1.text.isNotEmpty()){
-                val intent=Intent(this,MainActivity::class.java)
-                intent.putExtra("age",intent.extras!!.getString("age").toString())
-                intent.putExtra("gender", intent.extras!!.getString("gender").toString())
-                intent.putExtra("height", intent.extras!!.getString("height").toString())
-                intent.putExtra("weight", intent.extras!!.getString("weight").toString())
+                val intent=Intent(this,ResultActivity::class.java)
+//                intent.putExtra("age",intent.extras!!.getString("age").toString())
+//                intent.putExtra("gender", intent.extras!!.getString("gender").toString())
+//                intent.putExtra("height", intent.extras!!.getString("height").toString())
+//                intent.putExtra("weight", intent.extras!!.getString("weight").toString())
                 intent.putExtra("smoke", binding.smoke1.text.toString().trim())
                 intent.putExtra("alcohol", binding.alcohol1.text.toString().trim())
                 intent.putExtra("cardio", binding.cardio1.text.toString().trim())

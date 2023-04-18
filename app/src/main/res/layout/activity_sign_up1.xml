@@ -184,6 +184,60 @@
                     app:layout_constraintStart_toStartOf="@+id/SignUp_Name"
                     app:layout_constraintTop_toBottomOf="@+id/SignUp_Name" />
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/gluc"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editfield"
+                    android:hint="General Blood Glucose Level"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:visibility="visible"
+                    android:paddingStart="40dp"
+                    app:boxBackgroundColor="#F5F8FA"
+                    app:layout_constraintEnd_toEndOf="@+id/select_time"
+                    app:layout_constraintStart_toStartOf="@+id/select_time"
+                    app:layout_constraintTop_toBottomOf="@+id/select_time">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/gluc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:inputType="none"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cholestrol"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editfield"
+                    android:hint="General Cholestrol Level"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:visibility="visible"
+                    android:paddingStart="40dp"
+                    app:boxBackgroundColor="#F5F8FA"
+                    app:layout_constraintEnd_toEndOf="@+id/select_time"
+                    app:layout_constraintStart_toStartOf="@+id/select_time"
+                    app:layout_constraintTop_toBottomOf="@+id/select_time">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/cholestrol1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:inputType="none"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
 
                 <Button
                     android:id="@+id/createAccount"
