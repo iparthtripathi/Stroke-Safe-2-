@@ -16,6 +16,10 @@ class signUpActivity2 : AppCompatActivity() {
 
         val items= listOf("Yes","No")
         val adapter= ArrayAdapter(this,R.layout.list_items,items)
+        val gluc=intent.extras!!.getString("gluc").toString()
+        val cholestrol=intent.extras!!.getString("cholestrol").toString()
+        val height=intent.extras!!.getString("height").toString()
+        val weight=intent.extras!!.getString("weight").toString()
         binding.alcohol1.setAdapter(adapter)
         binding.cardio1.setAdapter(adapter)
         binding.smoke1.setAdapter(adapter)
@@ -24,10 +28,10 @@ class signUpActivity2 : AppCompatActivity() {
 
             if(binding.smoke1.text.isNotEmpty()&& binding.alcohol1.text.isNotEmpty()&& binding.cardio1.text.isNotEmpty()){
                 val intent=Intent(this,ResultActivity::class.java)
-//                intent.putExtra("age",intent.extras!!.getString("age").toString())
-//                intent.putExtra("gender", intent.extras!!.getString("gender").toString())
-//                intent.putExtra("height", intent.extras!!.getString("height").toString())
-//                intent.putExtra("weight", intent.extras!!.getString("weight").toString())
+                intent.putExtra("gluc",gluc)
+                intent.putExtra("cholestrol",cholestrol )
+                intent.putExtra("height", height)
+                intent.putExtra("weight", weight)
                 intent.putExtra("smoke", binding.smoke1.text.toString().trim())
                 intent.putExtra("alcohol", binding.alcohol1.text.toString().trim())
                 intent.putExtra("cardio", binding.cardio1.text.toString().trim())

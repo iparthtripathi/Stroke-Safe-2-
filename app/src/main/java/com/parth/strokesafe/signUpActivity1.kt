@@ -26,8 +26,8 @@ class signUpActivity1 : AppCompatActivity() {
         binding.createAccount.setOnClickListener{
             if(binding.age.text.isNotEmpty()&& binding.gender1.text.isNotEmpty()&& binding.height.text.isNotEmpty()&& binding.weight.text.isNotEmpty()){
                 val intent=Intent(this,signUpActivity2::class.java)
-                intent.putExtra("age", binding.age.text.toString().trim())
-                intent.putExtra("gender", binding.gender1.text.toString().trim())
+                intent.putExtra("gluc", binding.gluc1.text.toString().trim())
+                intent.putExtra("cholestrol", binding.cholestrol1.text.toString().trim())
                 intent.putExtra("height", binding.height.text.toString().trim())
                 intent.putExtra("weight", binding.weight.text.toString().trim())
                 startActivity(intent)
